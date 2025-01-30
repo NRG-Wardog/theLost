@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- לוגו האפליקציה -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:contentDescription="לוגו האפליקציה"
+        android:layout_marginBottom="20dp" />
+
+    <!-- כותרת ראשית -->
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="פיקוד העורף - מערכת התראות"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- טקסט הסבר -->
+    <TextView
+        android:id="@+id/tv_main_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="אפליקציה למעקב אחר התראות חירום והנחיות בזמן אמת"
+        android:textSize="18sp"
+        android:textColor="#111000"
+        android:gravity="center"
+        android:paddingBottom="30dp"/>
+
+    <!-- כפתורים אחד ליד השני -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#A20606"
+            android:fontFamily="sans-serif-medium"
+            android:padding="14dp"
+            android:text="⚙️"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:backgroundTint="#A20606"
+            android:fontFamily="sans-serif-medium"
+            android:padding="14dp"
+            android:text="🚪"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

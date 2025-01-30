@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#B71C1C"
+    tools:context=".MainActivity">
+
+    <!-- אייקון חירום -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/ic_dialog_alert"
+        app:tint="@android:color/white" />
+
+    <!-- כותרת גדולה -->
+    <TextView
+        android:id="@+id/tv_alert_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚨 ALERT: TAKE COVER NOW! 🚨"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <!-- טקסט הסבר -->
+    <TextView
+        android:id="@+id/tv_alert_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find shelter immediately! Follow official instructions."
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <!-- כפתור ביטול התרעה -->
+    <Button
+        android:id="@+id/close_overlay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#540202"
+        android:text="Dismiss Alert"
+        android:textColor="@android:color/white" />
+</LinearLayout>
