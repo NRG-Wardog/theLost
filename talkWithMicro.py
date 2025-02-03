@@ -11,7 +11,7 @@ import pyrebase
 # Make sure to replace it with your actual database URL.
 
 firebaseConfig = {
-    'apiKey': "AIzaSyCsAFtelb7mpoK_gXpaiU0xbFxfLschM1A",
+    'apiKey': "api_key",
     'authDomain': "thelost-78470.firebaseapp.com",
     'databaseURL': "https://thelost-78470-default-rtdb.firebaseio.com/",  # Replace with your valid Realtime Database URL
     'projectId': "thelost-78470",
